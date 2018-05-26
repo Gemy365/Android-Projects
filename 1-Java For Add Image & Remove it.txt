@@ -1,0 +1,230 @@
+package com.example.android.ImageView;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    int count = 0;
+
+
+
+    public void Images(View view)
+    {
+        changer();
+
+    }
+    public void changer()
+    {
+        ImageView ul = (ImageView) findViewById(R.id.UpLeft);
+        ImageView um = (ImageView) findViewById(R.id.UpMiddle);
+        ImageView ur = (ImageView) findViewById(R.id.UpRight);
+        ImageView dl = (ImageView) findViewById(R.id.DownLeft);
+        ImageView dm = (ImageView) findViewById(R.id.DownMiddle);
+        ImageView dr = (ImageView) findViewById(R.id.DownRight);
+        LinearLayout ln = (LinearLayout) findViewById(R.id.linear);
+        Button btn = (Button) findViewById(R.id.ClickMe);
+
+        count++;
+        if(count == 1)
+        {
+            ul.setImageResource(R.drawable.ul);				#Make Or Change Image Src
+            btn.setText("3arfa");
+        }
+        else if (count == 2)
+        {
+            um.setImageResource(R.drawable.um);
+            btn.setText("Lw");
+        }
+        else if (count == 3)
+        {
+            ur.setImageResource(R.drawable.ur);
+            btn.setText("El");
+        }
+        else if (count == 4)
+        {
+            dl.setImageResource(R.drawable.dl);
+            btn.setText("Donia");
+        }
+        else if (count == 5)
+        {
+            dm.setImageResource(R.drawable.dm);
+            btn.setText("Kolha");
+        }
+        else if (count == 6)
+        {
+            dr.setImageResource(R.drawable.dr);
+            btn.setText("Egtma3t");
+        }
+        else if(count == 7)
+        {
+            ul.setImageDrawable(null);					#Delete Image Src
+            btn.setText("Enk");
+        }
+        else if (count == 8)
+        {
+            um.setImageDrawable(null);
+            btn.setText("Msh");
+        }
+        else if (count == 9)
+        {
+            ur.setImageDrawable(null);
+            btn.setText("Lya");
+        }
+        else if (count == 10)
+        {
+            dl.setImageDrawable(null);
+            btn.setText("La");
+        }
+        else if (count == 11)
+        {
+            dm.setImageDrawable(null);
+            btn.setText("Ha2af");
+        }
+        else if (count == 12)
+        {
+            dr.setImageDrawable(null);
+            btn.setText("Odam");
+        }
+        else if(count == 13)
+        {
+            ul.setImageResource(R.drawable.l);
+            btn.setText("El");
+        }
+        else if (count == 14)
+        {
+            dl.setImageResource(R.drawable.o);
+            btn.setText("Donia");
+        }
+        else if (count == 15)
+        {
+            um.setImageResource(R.drawable.v);
+            btn.setText("Kolha");
+        }
+        else if (count == 16)
+        {
+            dm.setImageResource(R.drawable.e);
+            btn.setText("W");
+        }
+        else if (count == 17)
+        {
+            ur.setImageResource(R.drawable.u);
+            btn.setText("Lw");
+        }
+        else if (count == 18)
+        {
+            dr.setImageResource(R.drawable.heart);
+            btn.setText("3aMi");
+        }
+        else if(count == 19)
+        {
+            ul.setImageDrawable(null);
+            btn.setText("RfaDny");
+        }
+        else if (count == 20)
+        {
+            dl.setImageDrawable(null);
+            btn.setText("H7awel");
+        }
+        else if (count == 21)
+        {
+            um.setImageDrawable(null);
+            btn.setText("Tani");
+        }
+        else if (count == 22)
+        {
+            dm.setImageDrawable(null);
+            btn.setText("W");
+        }
+        else if (count == 23)
+        {
+            ur.setImageDrawable(null);
+            btn.setText("Tani");
+        }
+        else if (count == 24)
+        {
+            dr.setImageDrawable(null);
+            btn.setText("W");
+        }
+        else if(count == 25)
+        {
+            ul.setImageResource(R.drawable.n);
+            btn.setText("Tani");
+        }
+        else if (count == 26)
+        {
+            um.setImageResource(R.drawable.e);
+            btn.setText("L7d");
+        }
+        else if (count == 27)
+        {
+            ur.setImageResource(R.drawable.m);
+            btn.setText("Ma");
+        }
+        else if (count == 28)
+        {
+            dr.setImageResource(R.drawable.o);
+            btn.setText("Ywaf2");
+        }
+        else if (count == 29)
+        {
+            dm.setImageResource(R.drawable.girl);
+            btn.setText("Rbna");
+        }
+        else if (count == 30)
+        {
+            dl.setImageResource(R.drawable.flower);
+            btn.setText("Y2aweMo");
+        }
+        else if(count == 31)
+        {
+            ul.setImageDrawable(null);
+            btn.setText("BlSlaMa");
+        }
+        else if (count == 32)
+        {
+            um.setImageDrawable(null);
+            btn.setText("ISA");
+        }
+        else if (count == 33)
+        {
+            ur.setImageDrawable(null);
+            btn.setText("MaTnSish");
+        }
+        else if (count == 34)
+        {
+            dr.setImageDrawable(null);
+            btn.setText("Rbna");
+        }
+        else if (count == 35)
+        {
+            dm.setImageDrawable(null);
+            btn.setText("Yktbk");
+        }
+        else if (count == 36)
+        {
+            dl.setImageDrawable(null);
+            btn.setText("Lya");
+        }
+        else if (count == 37)
+        {
+            ln.setBackgroundResource(R.drawable.bg);
+            btn.setText(" <3 Ya Rb <3 ");
+        }
+        else
+        {
+            ln.setBackgroundResource(R.drawable.black);
+            count = 0;
+
+        }
+    }
+}
