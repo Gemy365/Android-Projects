@@ -1,0 +1,76 @@
+#activity_mani.xml
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+    android:id="@+id/list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.listofcall.MainActivity"
+    android:layout_gravity="center_horizontal"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+    android:background="#009de1"/>
+----------------------------------------------------------------
+#list_item.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_for_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_for_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+----------------------------------------------------------------
+<!-- Hint: Make Shape In res/drawable/AnyName.XML-->
+#shape.xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="oval">
+
+    <corners
+        android:radius="0dp"/>
+
+    <size
+        android:width="36dp"
+        android:height="36dp" />
+
+    <solid android:color="#fff" />
+
+    <stroke
+        android:width="3dp"
+        android:color="#ff00"
+        android:dashGap="0dp"
+        android:dashWidth="20dp"/>
+</shape>
+----------------------------------------------------------------
+#Manifset.xml
+<uses-permission android:name="android.permission.CALL_PHONE"/>

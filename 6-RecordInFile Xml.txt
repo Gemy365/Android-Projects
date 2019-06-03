@@ -1,0 +1,49 @@
+#XML
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.user.recordinfile.MainActivity">
+
+    <TextView
+        android:id="@+id/Record"
+        style="@style/forAllText"
+        android:text="Record" />
+
+    <TextView
+        android:id="@+id/StopRecord"
+        style="@style/forAllText"
+        android:text="Stop Record!" />
+
+    <TextView
+        android:id="@+id/Play"
+        style="@style/forAllText"
+        android:text="Play" />
+
+    <TextView
+        android:id="@+id/Stop"
+        style="@style/forAllText"
+        android:text="Stop!" />
+
+</LinearLayout>
+----------------------------------------------------------------
+#Style.xml
+    <style name="forAllText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">30dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+----------------------------------------------------------------
+#Manifset
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
